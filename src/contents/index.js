@@ -1,21 +1,27 @@
 const contents = {
+  // header section
   header: {
-    logo: "TOD",
+    logoEn: "TOD",
+    logoBn: "টোড",
     nav: [
       {
-        name: "Home",
+        nameEn: "Home",
+        nameBn: "হোম",
         link: process.env.PUBLIC_URL + "/",
       },
       {
-        name: "Packages",
+        nameEn: "Packages",
+        nameBn: "প্যাকেজেস",
         link: process.env.PUBLIC_URL + "/packages",
       },
       {
-        name: "About",
+        nameEn: "About",
+        nameBn: "সম্পর্কিত",
         link: process.env.PUBLIC_URL + "/about",
       },
       {
-        name: "Contact",
+        nameEn: "Contact",
+        nameBn: "যোগাযোগ",
         link: process.env.PUBLIC_URL + "/contact",
       },
     ],

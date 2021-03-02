@@ -6,9 +6,14 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
+// global state provider
+import StateProvider from "./context/context";
+
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <StateProvider>
+      <App />
+    </StateProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
