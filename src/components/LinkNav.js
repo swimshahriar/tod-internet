@@ -7,7 +7,7 @@ const LinkNav = ({ name, link }) => {
       to={link}
       className="p-1 transition-all duration-200 delay-100 ease-in"
       exact
-      activeClassName="border-b-4 border-white"
+      activeClassName="border-b-4 border-purple-700 dark:border-gray-100"
     >
       {name}
     </NavLink>

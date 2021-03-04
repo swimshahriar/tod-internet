@@ -9,6 +9,7 @@ const Header = () => {
   const state = useContext(GlobalState);
   const [header, setHeader] = useState(state.en.header);
 
+  // content set
   useEffect(() => {
     if (state.lan === "Bn") {
       setHeader(state.bn.header);
@@ -18,7 +19,7 @@ const Header = () => {
   }, [state.lan, state.en.header, state.bn.header]);
 
   return (
-    <header className="flex flex-col sm:flex-row justify-between align-center  px-10 md:px-20 py-4 md:py-6 bg-purple-800 text-white">
+    <header className="flex flex-col sm:flex-row justify-between align-center  px-10 md:px-20 py-4 md:py-6 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-100 shadow-md">
       <h1 className="font-bold text-2xl md:text-3xl mb-2 sm:mb-0 text-center">
         <NavLink to="/">{header.logo}</NavLink>
       </h1>
