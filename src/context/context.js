@@ -1,9 +1,15 @@
 import { createContext, useState } from "react";
 
+// contents
+import contentsBn from "../contents/contentsBn";
+import contentsEn from "../contents/contentsEn";
+
 // state object
 export const GlobalState = createContext({
-  lan: "En",
+  lan: "",
   changeLan: () => {},
+  en: {},
+  bn: {},
 });
 
 // provider function
@@ -15,7 +21,12 @@ const StateProvider = ({ children }) => {
   };
   return (
     <GlobalState.Provider
-      value={{ lan: activeLan, changeLan: changeLanHandler }}
+      value={{
+        lan: activeLan,
+        changeLan: changeLanHandler,
+        en: { ...contentsEn },
+        bn: { ...contentsBn },
+      }}
     >
       {children}
     </GlobalState.Provider>
