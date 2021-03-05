@@ -12,7 +12,7 @@ const ThemeToggle = () => {
 
   return (
     <>
-      {theme === "dark" ? (
+      {theme === "light" ? (
         <button
           onClick={() => changeTheme()}
           className="absolute right-4 bottom-4 w-8 h-8 rounded-full bg-gray-100 focus:outline-none"
