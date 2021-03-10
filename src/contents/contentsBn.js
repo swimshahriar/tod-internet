@@ -21,6 +21,21 @@ const contentsBn = {
       },
     ],
   },
+  // home page
+  home: {
+    carousel: [
+      {
+        title: "শহরে দ্রুততম ইন্টারনেট।",
+        description: "Fastest Internet in Town.",
+        img: "../assets/computer.jpg",
+      },
+      {
+        title: "শহরে দ্রুততম ইন্টারনেট ২।",
+        description: "Fastest Internet in Town.",
+        img: "../assets/fiber_optic.jpg",
+      },
+    ],
+  },
 };
 
 export default contentsBn;

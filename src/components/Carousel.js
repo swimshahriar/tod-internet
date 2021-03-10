@@ -4,20 +4,7 @@ import React, { useState, useEffect } from "react";
 import arrowNext from "../assets/arrow_next.svg";
 import arrowPrev from "../assets/arrow_prev.svg";
 
-// demo carousel contents
-const contents = [
-  {
-    title: "Title 0",
-  },
-  {
-    title: "Title 1",
-  },
-  {
-    title: "Title 2",
-  },
-];
-
-const Carousel = (props) => {
+const Carousel = ({ contents }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
   const [carouselContent, setCarouselContent] = useState(
     contents[carouselIndex]
@@ -33,10 +20,11 @@ const Carousel = (props) => {
 
   useEffect(() => {
     setCarouselContent(contents[carouselIndex]);
-  }, [carouselIndex]);
+  }, [carouselIndex, contents]);
 
   return (
     <div className="w-full h-3/4 bg-gray-300 flex px-3 absolute">
+      <img src={carouselContent.img} alt={`im-${carouselIndex}`} />
       <button className="focus:outline-none">
         <img
           src={arrowPrev}
@@ -48,6 +36,7 @@ const Carousel = (props) => {
 
       <div className="flex-1 py-3">
         <h1>{carouselContent.title}</h1>
+        <h1>{carouselContent.description}</h1>
       </div>
 
       <button className="focus:outline-none">
