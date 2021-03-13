@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 // assets
 import arrowNext from "../assets/arrow_next.svg";
 import arrowPrev from "../assets/arrow_prev.svg";
+import computer from "../assets/computer.jpg";
+import fiberOptic from "../assets/fiber_optic.jpg";
 
 const Carousel = ({ contents }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -23,27 +25,36 @@ const Carousel = ({ contents }) => {
   }, [carouselIndex, contents]);
 
   return (
-    <div className="w-full h-3/4 bg-gray-300 flex px-3 absolute">
-      <img src={carouselContent.img} alt={`im-${carouselIndex}`} />
-      <button className="focus:outline-none">
+    <div
+      className="w-full h-3/4  flex px-3 absolute"
+      style={{
+        backgroundImage: `url(${carouselIndex === 0 ? computer : fiberOptic})`,
+        backgroundSize: "cover",
+      }}
+    >
+      <button className="focus:outline-none absolute top-1/2 left-5">
         <img
           src={arrowPrev}
           alt="arrow_prev"
-          className="w-16"
+          className="w-12 md:w-16"
           onClick={prevClickHandler}
         />
       </button>
 
-      <div className="flex-1 py-3">
-        <h1>{carouselContent.title}</h1>
-        <h1>{carouselContent.description}</h1>
+      <div className="py-3 text-center m-auto">
+        <h1 className="my-3 px-3 py-3 text-2xl md:text-5xl bg-purple-700 dark:bg-gray-800 text-gray-100 uppercase font-bold">
+          {carouselContent.title}
+        </h1>
+        <h1 className="my-3 px-3 py-3 text-xl md:text-2xl bg-gray-800 dark:bg-purple-700 text-gray-100">
+          {carouselContent.description}
+        </h1>
       </div>
 
-      <button className="focus:outline-none">
+      <button className="focus:outline-none absolute top-1/2 right-5">
         <img
           src={arrowNext}
           alt="arrow_next"
-          className="w-16"
+          className="w-12 md:w-16"
           onClick={nextClickHandler}
         />
       </button>

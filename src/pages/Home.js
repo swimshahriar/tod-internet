@@ -19,8 +19,6 @@ const Home = () => {
     }
   }, [state.lan, state.en.home, state.bn.home]);
 
-  console.log(contents);
-
   return (
     <div>
       <Carousel contents={contents.carousel} />

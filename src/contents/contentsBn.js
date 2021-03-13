@@ -26,13 +26,11 @@ const contentsBn = {
     carousel: [
       {
         title: "শহরে দ্রুততম ইন্টারনেট।",
-        description: "Fastest Internet in Town.",
-        img: "../assets/computer.jpg",
+        description: "শহরে দ্রুততম ইন্টারনেট।",
       },
       {
         title: "শহরে দ্রুততম ইন্টারনেট ২।",
-        description: "Fastest Internet in Town.",
-        img: "../assets/fiber_optic.jpg",
+        description: "শহরে দ্রুততম ইন্টারনেট ২।",
       },
     ],
   },
