@@ -26,10 +26,11 @@ const Carousel = ({ contents }) => {
 
   return (
     <div
-      className="w-full h-3/4  flex px-3 absolute"
+      className="w-full flex px-3 relative"
       style={{
         backgroundImage: `url(${carouselIndex === 0 ? computer : fiberOptic})`,
         backgroundSize: "cover",
+        height: "75vh"
       }}
     >
       <button className="focus:outline-none absolute top-1/2 left-5">
@@ -42,7 +43,7 @@ const Carousel = ({ contents }) => {
       </button>
 
       <div className="py-3 text-center m-auto">
-        <h1 className="my-3 px-3 py-3 text-2xl md:text-5xl bg-purple-700 dark:bg-gray-800 text-gray-100 uppercase font-bold">
+        <h1 className="my-3 px-3 py-5 text-2xl md:text-5xl bg-purple-700 dark:bg-gray-800 text-gray-100 uppercase font-bold">
           {carouselContent.title}
         </h1>
         <h1 className="my-3 px-3 py-3 text-xl md:text-2xl bg-gray-800 dark:bg-purple-700 text-gray-100">

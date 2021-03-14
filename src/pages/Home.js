@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 
 // components
 import Carousel from "../components/Carousel";
+import WhyOurNetwork from "../components/WhyOurNetwork";
 
 // gobal state
 import { GlobalState } from "../context/context";
@@ -22,6 +23,7 @@ const Home = () => {
   return (
     <div>
       <Carousel contents={contents.carousel} />
+      <WhyOurNetwork contents={contents.whyOurNetwork} />
     </div>
   );
 };
