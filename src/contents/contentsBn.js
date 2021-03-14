@@ -38,23 +38,23 @@ const contentsBn = {
       },
     ],
     whyOurNetwork: {
-      title: "Why Choose Our Network?",
+      title: "কেন আমাদের নেটওয়ার্ক বেছে নেবেন?",
       features: [
         {
           icon: <BsGear />,
-          desc: "Quick Installation and Setup",
+          desc: "দ্রুত Installation এবং Setup",
         },
         {
           icon: <BsCheckCircle />,
-          desc: "Fast and Reliable Network",
+          desc: "দ্রুত এবং বিশ্বাসযোগ্য নেটওয়ার্ক",
         },
         {
           icon: <FaNetworkWired />,
-          desc: "Fully FTTH Network",
+          desc: "পুরোপুরি FTTH নেটওয়ার্ক",
         },
         {
           icon: <BsChat />,
-          desc: "24/7 Online and Call Support",
+          desc: "২৪/৭ অনলাইন এবং কল সুবিধা",
         },
       ],
     },
