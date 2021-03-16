@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 
 // components
 import Carousel from "../components/Carousel";
+import Packages from "../components/Packages";
 import WhyOurNetwork from "../components/WhyOurNetwork";
 
 // gobal state
@@ -24,6 +25,7 @@ const Home = () => {
     <div>
       <Carousel contents={contents.carousel} />
       <WhyOurNetwork contents={contents.whyOurNetwork} />
+      <Packages />
     </div>
   );
 };
