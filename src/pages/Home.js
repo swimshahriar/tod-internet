@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from 'react';
 
 // components
-import Carousel from "../components/Carousel";
-import Packages from "../components/Packages";
-import WhyOurNetwork from "../components/WhyOurNetwork";
+import Carousel from '../components/Carousel';
+import Packages from '../components/Packages';
+import WhyOurNetwork from '../components/WhyOurNetwork';
 
 // gobal state
-import { GlobalState } from "../context/context";
+import { GlobalState } from '../context/context';
 
 const Home = () => {
   const state = useContext(GlobalState);
@@ -14,7 +14,7 @@ const Home = () => {
 
   // content set
   useEffect(() => {
-    if (state.lan === "Bn") {
+    if (state.lan === 'Bn') {
       setContents(state.bn.home);
     } else {
       setContents(state.en.home);
@@ -25,7 +25,7 @@ const Home = () => {
     <div>
       <Carousel contents={contents.carousel} />
       <WhyOurNetwork contents={contents.whyOurNetwork} />
-      <Packages />
+      <Packages contents={contents.packages} />
     </div>
   );
 };
