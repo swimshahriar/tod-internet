@@ -16,6 +16,9 @@ export const GlobalState = createContext({
 
 // provider function
 const StateProvider = ({ children }) => {
+  if (!window.localStorage.getItem("theme")) {
+    window.localStorage.setItem("theme", "light");
+  }
   const [activeLan, setActiveLan] = useState("En");
   const [theme, setTheme] = useState(window.localStorage.getItem("theme"));
 
