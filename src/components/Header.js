@@ -19,7 +19,7 @@ const Header = () => {
   }, [state.lan, state.en.header, state.bn.header]);
 
   return (
-    <header className="flex flex-col sm:flex-row justify-between align-center  px-10 md:px-20 py-4 md:py-6 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-100 shadow-md">
+    <header className="sticky top-0 z-50 flex flex-col sm:flex-row justify-between align-center  px-10 md:px-20 py-4 md:py-6 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-100 shadow-md">
       <h1 className="font-bold text-2xl md:text-3xl mb-2 sm:mb-0 text-center">
         <NavLink to="/">{header.logo}</NavLink>
       </h1>
