@@ -7,17 +7,13 @@ const Package = ({ packageInfo, fav }) => {
       <h2 className="text-center font-bold text-2xl bg-gray-700 text-gray-100 p-3 rounded-t">
         {packageInfo.name}
       </h2>
+
       <div className="w-full text-center bg-gray-100 border-b border-purple-700 py-3">
         <h4 className="w-1/2 mx-auto rounded-full text-gray-100 bg-gray-700 p-3 font-bold text-xl">
           {packageInfo.price} TK/month
         </h4>
       </div>
       <div className="bg-gray-100 text-gray-600">
-        {fav && (
-          <p className="border-b border-purple-700 p-3 text-center uppercase bg-purple-700 text-gray-100 font-bold">
-            Most Popular
-          </p>
-        )}
         {packageInfo.features.map((feature, index) => {
           return (
             <p className="border-b border-purple-700 p-3" key={index}>
