@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // components
 import Package from "./Package";
@@ -22,6 +23,11 @@ const Packages = ({ contents }) => {
             />
           );
         })}
+      </div>
+      <div className="w-full text-center">
+        <button className="p-3 dark:bg-purple-700 bg-gray-700 dark:hover:bg-purple-800 hover:bg-gray-800 text-gray-100 text-xl font-bold uppercase rounded">
+          <Link to="/packages">More Packages</Link>
+        </button>
       </div>
     </div>
   );
