@@ -10,7 +10,7 @@ const Package = ({ packageInfo, fav }) => {
 
       <div className="w-full text-center bg-gray-100 border-b border-purple-700 py-3">
         <h4 className="w-1/2 mx-auto rounded-full text-gray-100 bg-gray-700 p-3 font-bold text-xl">
-          {packageInfo.price} TK/month
+          {packageInfo.price}
         </h4>
       </div>
       <div className="bg-gray-100 text-gray-600">
