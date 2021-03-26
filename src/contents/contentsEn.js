@@ -1,6 +1,13 @@
 // icons
-import { BsGear, BsCheckCircle, BsChat } from "react-icons/bs";
-import { FaNetworkWired } from "react-icons/fa";
+import {
+  BsGear,
+  BsCheckCircle,
+  BsChat,
+  BsFillCameraVideoFill,
+} from "react-icons/bs";
+import { FaNetworkWired, FaGlobe } from "react-icons/fa";
+import { RiNodeTree } from "react-icons/ri";
+import { MdSecurity, MdRouter, MdVpnKey } from "react-icons/md";
 
 const contentsEn = {
   // header section
@@ -96,6 +103,35 @@ const contentsEn = {
             "4k Youtube and Facebook",
             "IPv4 and IPv6",
           ],
+        },
+      ],
+    },
+    services: {
+      title: "Services We Offer",
+      list: [
+        {
+          icon: <FaGlobe />,
+          desc: "Broadband Home Internet",
+        },
+        {
+          icon: <MdVpnKey />,
+          desc: "Corporate Data-VPN Service",
+        },
+        {
+          icon: <MdRouter />,
+          desc: "Corporate Network Solution",
+        },
+        {
+          icon: <MdSecurity />,
+          desc: "Network Security",
+        },
+        {
+          icon: <RiNodeTree />,
+          desc: "Dedicated Server Hosting",
+        },
+        {
+          icon: <BsFillCameraVideoFill />,
+          desc: "CCTV System Solution",
         },
       ],
     },
