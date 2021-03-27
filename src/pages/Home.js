@@ -27,7 +27,7 @@ const Home = () => {
       <Carousel contents={contents.carousel} />
       <WhyOurNetwork contents={contents.whyOurNetwork} />
       <Packages contents={contents.packages} />
-      <Services />
+      <Services contents={contents.services} />
     </div>
   );
 };

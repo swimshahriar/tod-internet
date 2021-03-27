@@ -6,7 +6,7 @@ import {
   BsFillCameraVideoFill,
 } from "react-icons/bs";
 import { FaNetworkWired, FaGlobe } from "react-icons/fa";
-import { RiNodeTree } from "react-icons/ri";
+import { CgListTree } from "react-icons/cg";
 import { MdSecurity, MdRouter, MdVpnKey } from "react-icons/md";
 
 const contentsEn = {
@@ -126,7 +126,7 @@ const contentsEn = {
           desc: "Network Security",
         },
         {
-          icon: <RiNodeTree />,
+          icon: <CgListTree />,
           desc: "Dedicated Server Hosting",
         },
         {
