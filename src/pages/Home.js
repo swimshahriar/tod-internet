@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext } from "react";
 // components
 import Carousel from "../components/Carousel";
 import Packages from "../components/Packages";
+import Partners from "../components/Partners";
 import Services from "../components/Services";
 import WhyOurNetwork from "../components/WhyOurNetwork";
 
@@ -28,6 +29,7 @@ const Home = () => {
       <WhyOurNetwork contents={contents.whyOurNetwork} />
       <Packages contents={contents.packages} />
       <Services contents={contents.services} />
+      <Partners contents={contents.partners} />
     </div>
   );
 };

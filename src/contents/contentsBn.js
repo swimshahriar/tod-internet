@@ -135,6 +135,41 @@ const contentsBn = {
         },
       ],
     },
+    partners: {
+      title: "আমাদের পার্টনার সমূহ",
+      list: [
+        {
+          icon: "",
+          link: "",
+          name: "ISPAB",
+        },
+        {
+          icon: "",
+          link: "",
+          name: "Google",
+        },
+        {
+          icon: "",
+          link: "",
+          name: "Facebook",
+        },
+        {
+          icon: "",
+          link: "",
+          name: "BDIX",
+        },
+        {
+          icon: "",
+          link: "",
+          name: "CISCO",
+        },
+        {
+          icon: "",
+          link: "",
+          name: "MikroTik",
+        },
+      ],
+    },
   },
 };
 
