@@ -11,7 +11,7 @@ const Partners = ({ contents }) => {
         {contents.title}
       </h2>
 
-      <div className="flex justify-center align-middle mt-20 bg-gray-100">
+      <div className="flex justify-center align-middle mt-20 bg-gray-100 overflow-x-scroll rounded shadow-md">
         {contents.list.map((partnerInfo, index) => {
           return <Partner info={partnerInfo} key={index} />;
         })}
