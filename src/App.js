@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 // components
 import Header from "./components/Header";
 import ThemeToggle from "./components/ThemeToggle";
+import Footer from "./components/Footer";
 
 // pages
 import Home from "./pages/Home";
@@ -46,6 +47,7 @@ const App = () => {
         </Route>
       </Switch>
       <ThemeToggle />
+      <Footer />
     </>
   );
 };
