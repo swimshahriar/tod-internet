@@ -5,7 +5,13 @@ import {
   BsChat,
   BsFillCameraVideoFill,
 } from "react-icons/bs";
-import { FaNetworkWired, FaGlobe } from "react-icons/fa";
+import {
+  FaNetworkWired,
+  FaGlobe,
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
 import { CgListTree } from "react-icons/cg";
 import { MdSecurity, MdRouter, MdVpnKey } from "react-icons/md";
 
@@ -170,6 +176,31 @@ const contentsEn = {
         },
       ],
     },
+  },
+  // Footer
+  footer: {
+    mediaServices: {},
+    socialLinks: {
+      title: "Socials",
+      links: [
+        {
+          title: "Facebook",
+          link: "https://www.facebook.com",
+          icon: <FaFacebookSquare />,
+        },
+        {
+          title: "Twitter",
+          link: "https://www.twitter.com",
+          icon: <FaTwitterSquare />,
+        },
+        {
+          title: "Instagram",
+          link: "https://www.instagram.com",
+          icon: <FaInstagramSquare />,
+        },
+      ],
+    },
+    copyright: `© Copyright ${new Date().getFullYear()} | TOD Internet`,
   },
 };
 
