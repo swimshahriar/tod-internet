@@ -179,7 +179,40 @@ const contentsEn = {
   },
   // Footer
   footer: {
-    mediaServices: {},
+    mediaServices: {
+      title: "Media Services",
+      list: [
+        {
+          title: "FTP",
+          link: "#",
+        },
+        {
+          title: "Live TV",
+          link: "#",
+        },
+      ],
+    },
+    pages: {
+      title: "Pages",
+      list: [
+        {
+          title: "Home",
+          link: "/",
+        },
+        {
+          title: "Packages",
+          link: "/packages",
+        },
+        {
+          title: "About",
+          link: "/about",
+        },
+        {
+          title: "Contact",
+          link: "/cotact",
+        },
+      ],
+    },
     socialLinks: {
       title: "Socials",
       links: [

@@ -5,7 +5,13 @@ import {
   BsChat,
   BsFillCameraVideoFill,
 } from "react-icons/bs";
-import { FaNetworkWired, FaGlobe } from "react-icons/fa";
+import {
+  FaNetworkWired,
+  FaGlobe,
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagramSquare,
+} from "react-icons/fa";
 import { CgListTree } from "react-icons/cg";
 import { MdSecurity, MdRouter, MdVpnKey } from "react-icons/md";
 
@@ -170,6 +176,64 @@ const contentsBn = {
         },
       ],
     },
+  },
+  // Footer
+  footer: {
+    mediaServices: {
+      title: "মিডিয়া সেবা",
+      list: [
+        {
+          title: "FTP",
+          link: "#",
+        },
+        {
+          title: "Live TV",
+          link: "#",
+        },
+      ],
+    },
+    pages: {
+      title: "পেজেস",
+      list: [
+        {
+          title: "হোম",
+          link: "/",
+        },
+        {
+          title: "প্যাকেজেস",
+          link: "/packages",
+        },
+        {
+          title: "সম্পর্কিত",
+          link: "/about",
+        },
+        {
+          title: "যোগাযোগ",
+          link: "/cotact",
+        },
+      ],
+    },
+    socialLinks: {
+      title: "সামাজিক যোগাযোগ মাধ্যম",
+      links: [
+        {
+          title: "ফেসবুক",
+          link: "https://www.facebook.com",
+          icon: <FaFacebookSquare />,
+        },
+        {
+          title: "টুইটার",
+          link: "https://www.twitter.com",
+          icon: <FaTwitterSquare />,
+        },
+        {
+          title: "ইন্সটাগ্রাম",
+          link: "https://www.instagram.com",
+          icon: <FaInstagramSquare />,
+        },
+      ],
+    },
+    copyright: `© কপিরাইট ${new Date().getFullYear()} | টোড ইন্টারনেট`,
   },
 };
 
