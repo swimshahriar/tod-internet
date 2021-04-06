@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 // pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Packages from "./pages/Packages";
+import AllPackages from "./pages/AllPackages";
 import Contact from "./pages/Contact";
 
 // global state
@@ -37,7 +37,7 @@ const App = () => {
           <Home />
         </Route>
         <Route path="/packages">
-          <Packages />
+          <AllPackages />
         </Route>
         <Route path="/about">
           <About />

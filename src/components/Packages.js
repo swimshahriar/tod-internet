@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 // components
 import Package from "./Package";
 
 const Packages = ({ contents }) => {
+  const location = useLocation().pathname;
+
   return (
     <div
-      className="px-10 md:px-20 py-5 dark:bg-gray-800"
+      className={`px-10 md:px-20 ${
+        location !== "/packages" ? "py-5" : "pb-5 pt-16"
+      } dark:bg-gray-800`}
       style={{ minHeight: "35rem" }}
     >
       <h2 className="text-center font-bold text-3xl lg:text-4xl text-gray-700 dark:text-gray-100 uppercase">
@@ -24,11 +28,13 @@ const Packages = ({ contents }) => {
           );
         })}
       </div>
-      <div className="w-full text-center">
-        <button className="p-3 dark:bg-purple-700 bg-gray-700 dark:hover:bg-purple-800 hover:bg-gray-800 text-gray-100 text-xl font-bold uppercase rounded">
-          <Link to="/packages">More Packages</Link>
-        </button>
-      </div>
+      {location !== "/packages" && (
+        <div className="w-full text-center">
+          <button className="p-3 dark:bg-purple-700 bg-gray-700 dark:hover:bg-purple-800 hover:bg-gray-800 text-gray-100 text-xl font-bold uppercase rounded">
+            <Link to="/packages">More Packages</Link>
+          </button>
+        </div>
+      )}
     </div>
   );
 };

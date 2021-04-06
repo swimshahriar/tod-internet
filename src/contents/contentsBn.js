@@ -177,6 +177,48 @@ const contentsBn = {
       ],
     },
   },
+  // Packages
+  packages: {
+    title: "সকল ইন্টারনেট প্যাকেজেস",
+    info: [
+      {
+        name: "গোল্ড",
+        price: "১৫০০ টাকা/মাসে",
+        fav: false,
+        features: [
+          "৪০ Mbps (রাত ২ঃ০০ থেকে রাত ৮ঃ০০ টা)",
+          "১০ Mbps (রাত ৮ঃ০০ থেকে রাত ২ঃ০০ টা)",
+          "BDIX Bandwidth - Unlimited",
+          "4k Youtube এবং Facebook",
+          "শুধুমাত্র IPv4",
+        ],
+      },
+      {
+        name: "ডায়মন্ড",
+        price: "১৫০০ টাকা/মাসে",
+        fav: true,
+        features: [
+          "৬০ Mbps (রাত ২ঃ০০ থেকে রাত ৮ঃ০০ টা)",
+          "১৫ Mbps (রাত ৮ঃ০০ থেকে রাত ২ঃ০০ টা)",
+          "BDIX Bandwidth - Unlimited",
+          "4k Youtube এবং Facebook",
+          "IPv4 এবং IPv6",
+        ],
+      },
+      {
+        name: "স্যাফায়ার",
+        price: "২০০০ টাকা/মাসে",
+        fav: false,
+        features: [
+          "৮০ Mbps (রাত ২ঃ০০ থেকে রাত ৮ঃ০০ টা)",
+          "৩০ Mbps (রাত ৮ঃ০০ থেকে রাত ২ঃ০০ টা)",
+          "BDIX Bandwidth - Unlimited",
+          "4k Youtube এবং Facebook",
+          "IPv4 এবং IPv6",
+        ],
+      },
+    ],
+  },
   // Footer
   footer: {
     mediaServices: {

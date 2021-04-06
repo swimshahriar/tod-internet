@@ -177,6 +177,48 @@ const contentsEn = {
       ],
     },
   },
+  // Packages
+  packages: {
+    title: "All Internet Packages",
+    info: [
+      {
+        name: "GOLD",
+        price: "1000 Tk/month",
+        fav: false,
+        features: [
+          "40 Mbps (2am to 8pm)",
+          "10 Mbps (8pm to 2am)",
+          "BDIX Bandwidth - Unlimited",
+          "4k Youtube and Facebook",
+          "Only IPv4",
+        ],
+      },
+      {
+        name: "DIAMOND",
+        price: "1500 Tk/month",
+        fav: true,
+        features: [
+          "60 Mbps (2am to 8pm)",
+          "15 Mbps (8pm to 2am)",
+          "BDIX Bandwidth - Unlimited",
+          "4k Youtube and Facebook",
+          "IPv4 and IPv6",
+        ],
+      },
+      {
+        name: "SAPPHIRE",
+        price: "2000 Tk/month",
+        fav: false,
+        features: [
+          "80 Mbps (2am to 8pm)",
+          "30 Mbps (8pm to 2am)",
+          "BDIX Bandwidth - Unlimited",
+          "4k Youtube and Facebook",
+          "IPv4 and IPv6",
+        ],
+      },
+    ],
+  },
   // Footer
   footer: {
     mediaServices: {
