@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 // assets
 import arrowNext from "../assets/arrow_next.svg";
@@ -30,16 +31,11 @@ const Carousel = ({ contents }) => {
       style={{
         backgroundImage: `url(${carouselIndex === 0 ? computer : fiberOptic})`,
         backgroundSize: "cover",
-        height: "75vh"
+        height: "75vh",
       }}
     >
-      <button className="focus:outline-none absolute top-1/2 left-5">
-        <img
-          src={arrowPrev}
-          alt="arrow_prev"
-          className="w-12 md:w-16"
-          onClick={prevClickHandler}
-        />
+      <button className="focus:outline-none absolute top-1/2 left-5 text-5xl lg:text-7xl text-gray-100">
+        <FaArrowCircleLeft onClick={prevClickHandler} />
       </button>
 
       <div className="py-3 text-center m-auto">
@@ -51,13 +47,8 @@ const Carousel = ({ contents }) => {
         </h1>
       </div>
 
-      <button className="focus:outline-none absolute top-1/2 right-5">
-        <img
-          src={arrowNext}
-          alt="arrow_next"
-          className="w-12 md:w-16"
-          onClick={nextClickHandler}
-        />
+      <button className="focus:outline-none absolute top-1/2 right-5 text-5xl lg:text-7xl text-gray-100">
+        <FaArrowCircleRight onClick={nextClickHandler} />
       </button>
       {/* <div className="absolute bottom-3 left-1/2  flex justify-center align-middle">
         <div className="w-4 h-4 bg-gray-700 border-3 border-purple-700 rounded-full"></div>
