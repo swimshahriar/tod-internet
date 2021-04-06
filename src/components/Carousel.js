@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 // assets
-import arrowNext from "../assets/arrow_next.svg";
-import arrowPrev from "../assets/arrow_prev.svg";
 import computer from "../assets/computer.jpg";
 import fiberOptic from "../assets/fiber_optic.jpg";
 
