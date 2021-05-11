@@ -28,18 +28,23 @@ const Contact = () => {
       <h1 className="text-center text-3xl font-bold mt-4 mb-6">Contact Page</h1>
       <div id="map-container" style={{ height: "30rem" }}></div>
       <div className="mt-6 flex md:flex-nowrap flex-wrap justify-center align-middle">
-        <form className="form w-96" onSubmit={(e) => e.preventDefault()}>
+        <form
+          className="form w-96"
+          onSubmit={(e) => e.preventDefault()}
+          method="POST"
+          netlify
+        >
           <label htmlFor="name">Name:</label> <br />
-          <input type="text" id="name" className="w-2/3" />
+          <input type="text" id="name" className="w-2/3 mt-2 mb-2" />
           <br />
           <label htmlFor="email">Email:</label> <br />
-          <input type="email" id="email" className="w-2/3" />
+          <input type="email" id="email" className="w-2/3 mt-2 mb-2" />
           <br />
           <label htmlFor="subject">Subject:</label> <br />
-          <input type="text" id="subject" className="w-2/3" />
+          <input type="text" id="subject" className="w-2/3 mt-2 mb-2" />
           <br />
           <label htmlFor="message">Message:</label> <br />
-          <textarea row="3" col="5" id="message" className="w-2/3" />
+          <textarea row="3" col="5" id="message" className="w-2/3 mt-2 mb-2" />
           <br />
           <button className="p-2 mt-2 dark:bg-purple-700 bg-gray-700 dark:hover:bg-purple-800 hover:bg-gray-800 text-gray-100 text-xl font-bold uppercase rounded">
             send
