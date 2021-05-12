@@ -1,27 +1,32 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
+
+// global state
+import { GlobalState } from "../context/context";
 
 const About = () => {
+  const state = useContext(GlobalState);
+  const [contents, setContents] = useState(state.en.about);
+
+  // content set
+  useEffect(() => {
+    if (state.lan === "Bn") {
+      setContents(state.bn.about);
+    } else {
+      setContents(state.en.about);
+    }
+  }, [state.lan, state.en.about, state.bn.about]);
+
   return (
     <div className="px-10 md:px-20 py-5 dark:bg-gray-800 dark:text-gray-100">
-      <h1 className="text-center p-5 text-3xl font-bold uppercase">About</h1>
+      <h1 className="text-center p-5 text-3xl font-bold uppercase">
+        {contents.title}
+      </h1>
       <p className="text-xl p-7">
-        TOD Internet has started its operation in the year 2005 with the
-        commitment of quality internet service at an affordable price. At the
-        time of commencement TOD Internet started with broadband service with
-        the state of art technology. In the course of time it’s R & D team has
-        developed and introduced many new technologies to meet the requirement
-        of new millennium. In the last 15 years TOD Internet has introduced many
-        new ideas and technologies to the internet industry.
+        {contents.desc[0]}
         <br />
-        We beieve we will be successful if our clients are successful. Solving
-        the hardest problems requires the best people. We think that the best
-        people will be drawn to the opportunity to work on the hardest problems.
-        We have built our company around that belief.
+        {contents.desc[1]}
         <br />
-        One of our main Aim is to satisfy all the Gamers out there, by providing
-        them with stable Internet Connection along with Real IP and port
-        blocking/forwarding solutions, good stable pings in European and
-        Singapore servers.
+        {contents.desc[2]}
       </p>
     </div>
   );

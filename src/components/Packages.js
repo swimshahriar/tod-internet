@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 // components
 import Package from "./Package";
 
-const Packages = ({ contents }) => {
+const Packages = ({ contents, lan }) => {
   const location = useLocation().pathname;
 
   return (
@@ -22,8 +22,8 @@ const Packages = ({ contents }) => {
           return (
             <Package
               packageInfo={packageInfo}
-              fav={packageInfo.fav}
               key={index}
+              lan={lan}
             />
           );
         })}
@@ -31,7 +31,9 @@ const Packages = ({ contents }) => {
       {location !== "/packages" && (
         <div className="w-full text-center">
           <button className="p-3 dark:bg-purple-700 bg-gray-700 dark:hover:bg-purple-800 hover:bg-gray-800 text-gray-100 text-xl font-bold uppercase rounded">
-            <Link to="/packages">More Packages</Link>
+            <Link to="/packages">
+              {lan === "En" ? "More Packages" : "সকল প্যাকেজেস"}
+            </Link>
           </button>
         </div>
       )}

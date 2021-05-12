@@ -27,7 +27,7 @@ const Home = () => {
     <div>
       <Carousel contents={contents.carousel} />
       <WhyOurNetwork contents={contents.whyOurNetwork} />
-      <Packages contents={contents.packages} />
+      <Packages contents={contents.packages} lan={state.lan} />
       <Services contents={contents.services} />
       <Partners contents={contents.partners} />
     </div>

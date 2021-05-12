@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Package = ({ packageInfo, fav }) => {
+const Package = ({ packageInfo, lan }) => {
   return (
     <div className="m-5 shadow-lg" style={{ minWidth: "20rem" }}>
       <h2 className="text-center font-bold text-2xl bg-gray-700 text-gray-100 p-3 rounded-t">
@@ -24,7 +24,7 @@ const Package = ({ packageInfo, fav }) => {
       </div>
 
       <button className="p-3 bg-purple-700 hover:bg-purple-800 w-full text-gray-100 text-xl font-bold uppercase">
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact">{lan === "En" ? "Contact" : "যোগাযোগ"}</Link>
       </button>
     </div>
   );
