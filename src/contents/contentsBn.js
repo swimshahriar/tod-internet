@@ -113,7 +113,7 @@ const contentsBn = {
       ],
     },
     services: {
-      title: "Services We Offer",
+      title: "আমরা যে সেবা গুলো দিয়ে থাকি",
       list: [
         {
           icon: <FaGlobe />,
